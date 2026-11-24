@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+   <header>
+        <nav class="navbar">
+            <h2 class="logo">Explore World</h2>
+            <button class="menu-btn" id="menuBtn" aria-label = "Toggle navigation" aria-expanded="false">☰</button> 
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+            </ul>
+         </nav>
+         </header>
+
+         <!-- page-banner -->
+          <section class="page-banner">
+            <h1>Contact Us</h1>
+            <p>Plan your next adventure with us</p>
+          </section>
+
+          <!-- contact section  -->
+           <section class="section light-bg">
+            <div class="contact-container">
+                <!-- contact Information -->
+                 <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>
+                    Have questions about your next trip?
+                    Fill out the form and share your travel plans.
+                </p>
+                <p><strong>Email:</strong>manigraphic1819@gmail.com</p>
+                <p><strong>Phone:</strong>8837551819</p>
+                <p><strong>Address:</strong>Pathankot , Punjab , India</p>
+
+                 </div>
+                 <!-- contact form -->
+                  
+                  <div class="contact-form">
+                    <h2>Travel Enquiry Form </h2>
+                    <form id="contactform">
+                    <label for="name">Full Name </label>
+                    <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your Name"
+                    required>
+                    <lable for="Email">Email</lable>
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Your Email"
+                    required>
+                    <label for="phone">Phone Number</label>
+                    <input
+                    type="tel"
+                    id="phone"
+                    name="Phone"
+                    placeholder="Enter Your 10 digit Number"
+                    pattern="[6-9][0-9]{9}"
+                    title="Enter a 10 Dight Indian valid Phone Number"
+                    required>
+
+                    <label for="destination">Choose Your Destination</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">select destination</option>
+                        <option value="Manali">Manali</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Maldives">Maldives</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Kashmir">Kashmir</option>
+                    </select>
+                    <label for="message">Your Message</label>
+                    <textarea id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us about Your travel plan"
+                    required></textarea>
+                    <button type="submit" class="btn">
+                        Submit Enquiry
+                    </button>
+                    <p id="form message" role="status" aria-live="polite"></p>
+                    </form>
+                  </div>
+            </div>
+           </section>
+           <!-- footer  -->
+
+           
+     <footer>
+           <p>&copy;2026 Explore World tour All rights. reserved</p>
+     </footer>
+     <script src="script.js"></script> 
+</body>
+</html>
